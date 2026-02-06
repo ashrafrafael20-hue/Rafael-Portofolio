@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Ashraf Rafael</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: linear-gradient(135deg, #0f172a, #1e293b); color: #f1f5f9;}
+
+    header {text-align: center; padding: 50px 20px;}
+    header h1 {font-size: 2.5rem; color: #38bdf8;}
+    header p {font-size: 1.1rem; color: #cbd5e1; margin-top: 10px;}
+
+    nav {display: flex; justify-content: center; gap: 20px; margin: 30px 0;}
+    nav a {color: #38bdf8; text-decoration: none; font-weight: 600; transition: 0.3s;}
+    nav a:hover {color: #facc15;}
+
+    section {max-width: 1000px; margin: auto; padding: 20px;}
+
+    .about {text-align: center; margin-bottom: 50px;}
+    .about img {width: 150px; height: 150px; border-radius: 50%; border: 4px solid #38bdf8; margin-bottom: 20px;}
+    .about h2 {color: #facc15; margin-bottom: 10px;}
+    .about p {color: #cbd5e1; font-size: 1rem;}
+
+    .projects {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;}
+    .project-card {background: #1e293b; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s;}
+    .project-card:hover {transform: translateY(-5px); background: #334155;}
+    .project-card h3 {color: #38bdf8; margin-bottom: 10px;}
+    .project-card p {color: #cbd5e1; margin-bottom: 15px;}
+    .project-card a {text-decoration: none; color: #facc15; font-weight: 600;}
+
+    .skills {margin-top: 60px;}
+    .skills h2 {color: #facc15; text-align: center; margin-bottom: 20px;}
+    .skill-list {display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;}
+    .skill {background: #38bdf8; color: #0f172a; padding: 10px 20px; border-radius: 30px; font-weight: 600;}
+
+    footer {text-align: center; padding: 30px; margin-top: 60px; border-top: 1px solid #334155; color: #94a3b8;}
+    footer a {color: #38bdf8; text-decoration: none; margin: 0 10px;}
+    footer a:hover {color: #facc15;}
+
+    @media (max-width: 600px) {
+      header h1 {font-size: 2rem;}
+      nav {flex-direction: column; gap: 10px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Portofolio Ashraf Rafael 🌟</h1>
+    <p>Pelajar • Pengembang Web Pemula • Pecinta Anime dan Game</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang Saya</a>
+    <a href="#projects">Proyek</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section id="about" class="about">
+    <img src="https://via.placeholder.com/150" alt="Foto Profil">
+    <h2>Halo, Aku Ashraf!</h2>
+    <p>Aku seorang pelajar yang suka belajar pemrograman, terutama Python dan pengembangan web. Aku suka membuat proyek kecil yang membantu aku belajar hal baru setiap hari!</p>
+  </section>
+
+  <section id="projects">
+    <h2 style="color:#facc15; text-align:center; margin-bottom:20px;">🧠 Proyek Saya</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>🌐 Website Portofolio</h3>
+        <p>Sebuah website pribadi untuk menampilkan proyek dan informasi tentang saya.</p>
+        <a href="https://github.com/ashrafrafael20-hue/portfolio" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="project-card">
+        <h3>🐍 PythonDasar</h3>
+        <p>Kumpulan latihan dasar Python seperti loop, fungsi, dan struktur data.</p>
+        <a href="https://github.com/ashrafrafael20-hue/PythonDasar" target="_blank">Lihat di GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>⚙️ Keahlian Saya</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Hubungi saya di:</p>
+    <a href="mailto:youremail@example.com">📧 Email</a>
+    <a href="https://instagram.com/yourusername" target="_blank">📸 Instagram</a>
+    <a href="https://github.com/ashrafrafael20-hue" target="_blank">🐱 GitHub</a>
+    <p style="margin-top:15px; font-size:0.9rem;">© 2026 Ashraf Rafael</p>
+  </footer>
+</body>
+</html>
