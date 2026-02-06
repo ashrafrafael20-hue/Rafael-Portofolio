@@ -1,0 +1,159 @@
+/* style.css - Gaya untuk portofolio Ashraf Rafael */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #facc15;
+  font-weight: 600;
+}
+
+.skills {
+  margin-top: 60px;
+}
+
+.skills h2 {
+  color: #facc15;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #facc15;
+}
+
+@media (max-width: 600px) {
+  header h1 {font-size: 2rem;}
+  nav {flex-direction: column; gap: 10px;}
+}
